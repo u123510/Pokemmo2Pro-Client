@@ -1,0 +1,16 @@
+package f;
+
+import cn.pokemmo.battle.animation.move.gen4.ForcePalmAnimation;
+
+/**
+ * 宝可梦对战技能招式动画垫片 - 发劲 (ForcePalm)
+ * 技能编号: 395
+ * 原始类: f.kv0_0
+ * 现代实现: cn.pokemmo.battle.animation.move.gen4.ForcePalmAnimation
+ */
+public final class kv0_0 extends ForcePalmAnimation {
+
+    public kv0_0(PF pF) {
+        super(pF);
+    }
+}

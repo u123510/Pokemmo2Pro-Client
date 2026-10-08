@@ -1,0 +1,311 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package cn.pokemmo.net.security;
+
+import f.*;
+
+import f.en_0;
+
+public class Crc16PacketChecksumEngine extends PacketChecksumEngine {
+    public static final Crc16PacketChecksumEngine INSTANCE = new Crc16PacketChecksumEngine();
+    public static final Crc16PacketChecksumEngine uu = INSTANCE;
+    public static final int[] jh;
+
+    static {
+        int[] nArray = new int[256];
+        int[] nArray2 = nArray;
+        nArray[0] = 0;
+        nArray2[1] = 49345;
+        nArray2[2] = 49537;
+        nArray2[3] = 320;
+        nArray2[4] = 49921;
+        nArray2[5] = 960;
+        nArray2[6] = 640;
+        nArray2[7] = 49729;
+        nArray2[8] = 50689;
+        nArray2[9] = 1728;
+        nArray2[10] = 1920;
+        nArray2[11] = 51009;
+        nArray2[12] = 1280;
+        nArray2[13] = 50625;
+        nArray2[14] = 50305;
+        nArray2[15] = 1088;
+        nArray2[16] = 52225;
+        nArray2[17] = 3264;
+        nArray2[18] = 3456;
+        nArray2[19] = 52545;
+        nArray2[20] = 3840;
+        nArray2[21] = 53185;
+        nArray2[22] = 52865;
+        nArray2[23] = 3648;
+        nArray2[24] = 2560;
+        nArray2[25] = 51905;
+        nArray2[26] = 52097;
+        nArray2[27] = 2880;
+        nArray2[28] = 51457;
+        nArray2[29] = 2496;
+        nArray2[30] = 2176;
+        nArray2[31] = 51265;
+        nArray2[32] = 55297;
+        nArray2[33] = 6336;
+        nArray2[34] = 6528;
+        nArray2[35] = 55617;
+        nArray2[36] = 6912;
+        nArray2[37] = 56257;
+        nArray2[38] = 55937;
+        nArray2[39] = 6720;
+        nArray2[40] = 7680;
+        nArray2[41] = 57025;
+        nArray2[42] = 57217;
+        nArray2[43] = 8000;
+        nArray2[44] = 56577;
+        nArray2[45] = 7616;
+        nArray2[46] = 7296;
+        nArray2[47] = 56385;
+        nArray2[48] = 5120;
+        nArray2[49] = 54465;
+        nArray2[50] = 54657;
+        nArray2[51] = 5440;
+        nArray2[52] = 55041;
+        nArray2[53] = 6080;
+        nArray2[54] = 5760;
+        nArray2[55] = 54849;
+        nArray2[56] = 53761;
+        nArray2[57] = 4800;
+        nArray2[58] = 4992;
+        nArray2[59] = 54081;
+        nArray2[60] = 4352;
+        nArray2[61] = 53697;
+        nArray2[62] = 53377;
+        nArray2[63] = 4160;
+        nArray2[64] = 61441;
+        nArray2[65] = 12480;
+        nArray2[66] = 12672;
+        nArray2[67] = 61761;
+        nArray2[68] = 13056;
+        nArray2[69] = 62401;
+        nArray2[70] = 62081;
+        nArray2[71] = 12864;
+        nArray2[72] = 13824;
+        nArray2[73] = 63169;
+        nArray2[74] = 63361;
+        nArray2[75] = 14144;
+        nArray2[76] = 62721;
+        nArray2[77] = 13760;
+        nArray2[78] = 13440;
+        nArray2[79] = 62529;
+        nArray2[80] = 15360;
+        nArray2[81] = 64705;
+        nArray2[82] = 64897;
+        nArray2[83] = 15680;
+        nArray2[84] = 65281;
+        nArray2[85] = 16320;
+        nArray2[86] = 16000;
+        nArray2[87] = 65089;
+        nArray2[88] = 64001;
+        nArray2[89] = 15040;
+        nArray2[90] = 15232;
+        nArray2[91] = 64321;
+        nArray2[92] = 14592;
+        nArray2[93] = 63937;
+        nArray2[94] = 63617;
+        nArray2[95] = 14400;
+        nArray2[96] = 10240;
+        nArray2[97] = 59585;
+        nArray2[98] = 59777;
+        nArray2[99] = 10560;
+        nArray2[100] = 60161;
+        nArray2[101] = 11200;
+        nArray2[102] = 10880;
+        nArray2[103] = 59969;
+        nArray2[104] = 60929;
+        nArray2[105] = 11968;
+        nArray2[106] = 12160;
+        nArray2[107] = 61249;
+        nArray2[108] = 11520;
+        nArray2[109] = 60865;
+        nArray2[110] = 60545;
+        nArray2[111] = 11328;
+        nArray2[112] = 58369;
+        nArray2[113] = 9408;
+        nArray2[114] = 9600;
+        nArray2[115] = 58689;
+        nArray2[116] = 9984;
+        nArray2[117] = 59329;
+        nArray2[118] = 59009;
+        nArray2[119] = 9792;
+        nArray2[120] = 8704;
+        nArray2[121] = 58049;
+        nArray2[122] = 58241;
+        nArray2[123] = 9024;
+        nArray2[124] = 57601;
+        nArray2[125] = 8640;
+        nArray2[126] = 8320;
+        nArray2[127] = 57409;
+        nArray2[128] = 40961;
+        nArray2[129] = 24768;
+        nArray2[130] = 24960;
+        nArray2[131] = 41281;
+        nArray2[132] = 25344;
+        nArray2[133] = 41921;
+        nArray2[134] = 41601;
+        nArray2[135] = 25152;
+        nArray2[136] = 26112;
+        nArray2[137] = 42689;
+        nArray2[138] = 42881;
+        nArray2[139] = 26432;
+        nArray2[140] = 42241;
+        nArray2[141] = 26048;
+        nArray2[142] = 25728;
+        nArray2[143] = 42049;
+        nArray2[144] = 27648;
+        nArray2[145] = 44225;
+        nArray2[146] = 44417;
+        nArray2[147] = 27968;
+        nArray2[148] = 44801;
+        nArray2[149] = 28608;
+        nArray2[150] = 28288;
+        nArray2[151] = 44609;
+        nArray2[152] = 43521;
+        nArray2[153] = 27328;
+        nArray2[154] = 27520;
+        nArray2[155] = 43841;
+        nArray2[156] = 26880;
+        nArray2[157] = 43457;
+        nArray2[158] = 43137;
+        nArray2[159] = 26688;
+        nArray2[160] = 30720;
+        nArray2[161] = 47297;
+        nArray2[162] = 47489;
+        nArray2[163] = 31040;
+        nArray2[164] = 47873;
+        nArray2[165] = 31680;
+        nArray2[166] = 31360;
+        nArray2[167] = 47681;
+        nArray2[168] = 48641;
+        nArray2[169] = 32448;
+        nArray2[170] = 32640;
+        nArray2[171] = 48961;
+        nArray2[172] = 32000;
+        nArray2[173] = 48577;
+        nArray2[174] = 48257;
+        nArray2[175] = 31808;
+        nArray2[176] = 46081;
+        nArray2[177] = 29888;
+        nArray2[178] = 30080;
+        nArray2[179] = 46401;
+        nArray2[180] = 30464;
+        nArray2[181] = 47041;
+        nArray2[182] = 46721;
+        nArray2[183] = 30272;
+        nArray2[184] = 29184;
+        nArray2[185] = 45761;
+        nArray2[186] = 45953;
+        nArray2[187] = 29504;
+        nArray2[188] = 45313;
+        nArray2[189] = 29120;
+        nArray2[190] = 28800;
+        nArray2[191] = 45121;
+        nArray2[192] = 20480;
+        nArray2[193] = 37057;
+        nArray2[194] = 37249;
+        nArray2[195] = 20800;
+        nArray2[196] = 37633;
+        nArray2[197] = 21440;
+        nArray2[198] = 21120;
+        nArray2[199] = 37441;
+        nArray2[200] = 38401;
+        nArray2[201] = 22208;
+        nArray2[202] = 22400;
+        nArray2[203] = 38721;
+        nArray2[204] = 21760;
+        nArray2[205] = 38337;
+        nArray2[206] = 38017;
+        nArray2[207] = 21568;
+        nArray2[208] = 39937;
+        nArray2[209] = 23744;
+        nArray2[210] = 23936;
+        nArray2[211] = 40257;
+        nArray2[212] = 24320;
+        nArray2[213] = 40897;
+        nArray2[214] = 40577;
+        nArray2[215] = 24128;
+        nArray2[216] = 23040;
+        nArray2[217] = 39617;
+        nArray2[218] = 39809;
+        nArray2[219] = 23360;
+        nArray2[220] = 39169;
+        nArray2[221] = 22976;
+        nArray2[222] = 22656;
+        nArray2[223] = 38977;
+        nArray2[224] = 34817;
+        nArray2[225] = 18624;
+        nArray2[226] = 18816;
+        nArray2[227] = 35137;
+        nArray2[228] = 19200;
+        nArray2[229] = 35777;
+        nArray2[230] = 35457;
+        nArray2[231] = 19008;
+        nArray2[232] = 19968;
+        nArray2[233] = 36545;
+        nArray2[234] = 36737;
+        nArray2[235] = 20288;
+        nArray2[236] = 36097;
+        nArray2[237] = 19904;
+        nArray2[238] = 19584;
+        nArray2[239] = 35905;
+        nArray2[240] = 17408;
+        nArray2[241] = 33985;
+        nArray2[242] = 34177;
+        nArray2[243] = 17728;
+        nArray2[244] = 34561;
+        nArray2[245] = 18368;
+        nArray2[246] = 18048;
+        nArray2[247] = 34369;
+        nArray2[248] = 33281;
+        nArray2[249] = 17088;
+        nArray2[250] = 17280;
+        nArray2[251] = 33601;
+        nArray2[252] = 16640;
+        nArray2[253] = 33217;
+        nArray2[254] = 32897;
+        nArray2[255] = 16448;
+        jh = nArray2;
+    }
+
+    @Override
+    public final int jR() {
+        return 2;
+    }
+
+    @Override
+    public final void SG(byte[] byArray, int n, int n2) {
+        int n3 = 0;
+        n2 = n + n2;
+        while (n < n2) {
+            n3 = n3 >>> 8 ^ jh[(n3 ^ byArray[n]) & 0xFF];
+            ++n;
+        }
+        int n4 = n3;
+        byArray[n] = (byte)n3;
+        n3 = n + 1;
+        byArray[n3] = (byte)(n4 >> 8);
+    }
+
+    @Override
+    public final boolean Jm(byte[] byArray, int n, int n2) {
+        int n3 = n2 - 2;
+        if (n3 < 0) {
+            return false;
+        }
+        n2 = 0;
+        n3 = n + n3;
+        while (n < n3) {
+            n2 = n2 >>> 8 ^ jh[(n2 ^ byArray[n]) & 0xFF];
+            ++n;
+        }
+        return n2 == (byArray[n] & 0xFF | (byArray[n + 1] & 0xFF) << 8);
+    }
+}
+

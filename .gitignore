@@ -1,0 +1,11 @@
+# Ignore all project files by default.
+*
+
+# Keep repository configuration and requested project files.
+!.gitignore
+!README.md
+!pom.xml
+!REPAIR_LOG.md
+# Keep all source files.
+!src/
+!src/**

@@ -1,0 +1,1496 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package f;
+
+import f.A90;
+import f.AB;
+import f.AZ;
+import f.BA0;
+import f.C20;
+import f.CH0;
+import f.COM1_;
+import f.COm2_;
+import f.Cq0;
+import f.DS;
+import f.Dv0;
+import f.E70;
+import f.E8;
+import f.EJ;
+import f.F8;
+import f.FA0;
+import f.Fp0;
+import f.GH;
+import f.GO;
+import f.GV;
+import f.H3;
+import f.HN;
+import f.Hv0;
+import f.IP;
+import f.IW;
+import f.Iy0;
+import f.Iz0;
+import f.JH0;
+import f.KE;
+import f.KK0;
+import f.Kg;
+import f.Ku0;
+import f.Kv0;
+import f.MQ;
+import f.Nt;
+import f.O40;
+import f.OK;
+import f.P5;
+import f.PM;
+import f.QD;
+import f.QG;
+import f.QK0;
+import f.R50;
+import f.RS;
+import f.RV;
+import f.TL;
+import f.TR;
+import f.UN;
+import f.UP;
+import f.V40;
+import f.VH0;
+import f.WF;
+import f.WK0;
+import f.Wq0;
+import f.Xv0;
+import f.ZC0;
+import f.Zp0;
+import f._protected;
+import f._throws;
+import f.ah_0;
+import f.ai_1;
+import f.ak0_0;
+import f.aq_1;
+import f.as_1;
+import f.av_0;
+import f.ax_2;
+import f.ay0_0;
+import f.b30_0;
+import f.ba_1;
+import f.bb0_1;
+import f.bg0_1;
+import f.bi_2;
+import f.bv_0;
+import f.cc0_1;
+import f.cf_1;
+import f.cm0_1;
+import f.com7__6;
+import f.com9__1;
+import f.con__0;
+import f.cx0;
+import f.d70_0;
+import f.dh_0;
+import f.dk_1;
+import f.dl_1;
+import f.du_0;
+import f.e40;
+import f.ea_0;
+import f.ei0_0;
+import f.fj_1;
+import f.fq_2;
+import f.g1_0;
+import f.gc_2;
+import f.gr_0;
+import f.gw_1;
+import f.hd0_0;
+import f.he0_0;
+import f.he_1;
+import f.hi_0;
+import f.i40_0;
+import f.im_1;
+import f.ip_0;
+import f.iu_0;
+import f.jc_0;
+import f.jg_2;
+import f.jp_1;
+import f.jp_2;
+import f.js0;
+import f.jw_1;
+import f.k20_0;
+import f.ka_0;
+import f.kl0_1;
+import f.kl_0;
+import f.ks_0;
+import f.l10_0;
+import f.l7_0;
+import f.ld0_0;
+import f.lq_1;
+import f.lu0_0;
+import f.m10_0;
+import f.m3_0;
+import f.ml_1;
+import f.na0_1;
+import f.nb0_0;
+import f.nj0_2;
+import f.o0_0;
+import f.od_2;
+import f.om0_0;
+import f.p3_0;
+import f.p80_0;
+import f.pf0_1;
+import f.ph0_1;
+import f.pk_2;
+import f.pl0_1;
+import f.prn__5;
+import f.pu_1;
+import f.pw0_0;
+import f.pz_1;
+import f.qa_0;
+import f.qn_0;
+import f.qs_2;
+import f.qv_2;
+import f.qx_2;
+import f.qy0_0;
+import f.r30_0;
+import f.rw_2;
+import f.s00_0;
+import f.sb0_0;
+import f.sf0_0;
+import f.sg0_2;
+import f.sl_0;
+import f.t10_0;
+import f.t90_0;
+import f.t_0;
+import f.td_0;
+import f.te_1;
+import f.tf0_2;
+import f.ti0_0;
+import f.tz_2;
+import f.u10_0;
+import f.u30_0;
+import f.uz_0;
+import f.v30_0;
+import f.v60_0;
+import f.va0_0;
+import f.vc0_2;
+import f.vd0_1;
+import f.vq_0;
+import f.w40_0;
+import f.xd0_0;
+import f.xg0_1;
+import f.xl_0;
+import f.xp_0;
+import f.xr_1;
+import f.xy_0;
+import f.y9_0;
+import f.ya_0;
+import f.yb0_1;
+import f.yf_0;
+import f.z4_0;
+import java.nio.ByteBuffer;
+
+public abstract class JK0
+extends GH {
+    public static final dl_1 ZD = Cq0.E1(JK0.class);
+
+    public JK0(ByteBuffer byteBuffer, k20_0 k20_02) {
+        super(k20_02, byteBuffer);
+    }
+
+    /*
+     * WARNING - void declaration
+     * Enabled aggressive block sorting
+     */
+    public final Nt S2() {
+        void var7_53;
+        int n;
+        int n2;
+        byte by;
+        block212: {
+            jc_0 jc_02;
+            gw_1 gw_12;
+            block213: {
+                pk_2 pk_22;
+                int n3 = kl_02.Rj.get();
+                by = kl_02.Rj.get();
+                nj0_2 nj0_22 = CH0.j1;
+                n2 = by | 1;
+                if (n2 == by) {
+                    CH0 cH0 = kl_02.pE();
+                } else {
+                    CH0[] cH0Array = nj0_22;
+                }
+                n = by | 2;
+                if (n == by) {
+                    CH0 cH0 = kl_02.pE();
+                } else {
+                    CH0[] cH0Array = nj0_22;
+                }
+                switch (n3) {
+                    default: {
+                        RuntimeException runtimeException;
+                        kl_0 kl_02 = runtimeException;
+                        runtimeException = new RuntimeException();
+                        ZD.error("{}", (Object)((byte)n3), (Object)kl_02);
+                        return null;
+                    }
+                    case 127: {
+                        pu_1 pu_12;
+                        kl_0 kl_02 = pu_12;
+                        pu_12 = new pu_1();
+                        break block212;
+                    }
+                    case 126: {
+                        Iy0 iy0;
+                        kl_0 kl_02 = iy0;
+                        iy0 = new Iy0();
+                        break block212;
+                    }
+                    case 125: {
+                        COm2_ cOm2_;
+                        kl_0 kl_02 = cOm2_;
+                        cOm2_ = new COm2_();
+                        break block212;
+                    }
+                    case 124: {
+                        AZ aZ;
+                        byte by2 = kl_02.Rj.get();
+                        n3 = by2;
+                        nj0_22 = new gc_2[by2];
+                        for (int n4 = 0; n4 < n3; n4 = (byte)(n4 + 1)) {
+                            nj0_22[n4] = (gc_2)gc_2.z80.BM(kl_02.Rj.get());
+                        }
+                        kl_0 kl_02 = aZ;
+                        aZ = new AZ((gc_2[])nj0_22);
+                        break block212;
+                    }
+                    case 123: {
+                        xl_0 xl_02;
+                        kl_0 kl_02 = xl_02;
+                        xl_02 = new xl_0();
+                        break block212;
+                    }
+                    case 122: {
+                        HN hN;
+                        n3 = kl_02.Rj.get();
+                        nj0_22 = hN;
+                        byte[] byArray = new byte[n3];
+                        kl_02.Rj.get(byArray);
+                        hN = new HN(byArray);
+                        gw_12 = nj0_22;
+                        break block212;
+                    }
+                    case 121: {
+                        cf_1 cf_12;
+                        jc_02 = cf_12;
+                        cf_12 = new cf_1(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 120: {
+                        con__0 con__02;
+                        jc_02 = con__02;
+                        con__02 = new con__0(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 119: {
+                        du_0 du_02;
+                        jc_02 = du_02;
+                        du_02 = new du_0(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 118: {
+                        IW iW;
+                        jc_02 = iW;
+                        iW = new IW(kl_02.pE(), kl_02.Rj.getShort(), kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 117: {
+                        O40 o40;
+                        jc_02 = o40;
+                        o40 = new O40(kl_02.pE(), kl_02.q60());
+                        break block213;
+                    }
+                    case 116: {
+                        pl0_1 pl0_12;
+                        jc_02 = pl0_12;
+                        pl0_12 = new pl0_1(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 115: {
+                        xd0_0 xd0_02;
+                        jc_02 = xd0_02;
+                        xd0_02 = new xd0_0(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 114: {
+                        om0_0 om0_02;
+                        jc_02 = om0_02;
+                        om0_02 = new om0_0(kl_02.Rj.get(), kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 113: {
+                        GO gO;
+                        jc_02 = gO;
+                        gO = new GO(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 112: {
+                        kl0_1 kl0_12;
+                        jc_02 = kl0_12;
+                        kl0_12 = new kl0_1(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 111: {
+                        w40_0 w40_02;
+                        jc_02 = w40_02;
+                        w40_02 = new w40_0(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 110: {
+                        QD qD;
+                        jc_02 = qD;
+                        qD = new QD(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 109: {
+                        Wq0 wq0;
+                        jc_02 = wq0;
+                        wq0 = new Wq0(kl_02.Rj.getShort(), kl_02.Rj.get(), kl_02.q60(), kl_02.Rj.getShort(), kl_02.Rj.get(), kl_02.Rj.get(), kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 108: {
+                        Fp0 fp0;
+                        jc_02 = fp0;
+                        fp0 = new Fp0(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 107: {
+                        gr_0 gr_02;
+                        jc_02 = gr_02;
+                        short s = kl_02.Rj.getShort();
+                        kl_02.Rj.get();
+                        gr_02 = new gr_0(s, kl_02.Rj.getShort(), kl_02.Rj.getShort(), kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 106: {
+                        vq_0 vq_02;
+                        jc_02 = vq_02;
+                        byte by3 = kl_02.Rj.get();
+                        byte[] byArray = new byte[kl_02.Rj.get()];
+                        kl_02.Rj.get(byArray);
+                        vq_02 = new vq_0(by3, byArray);
+                        break block213;
+                    }
+                    case 105: {
+                        Kg kg;
+                        jc_02 = kg;
+                        kl_02.Rj.getShort();
+                        kg = new Kg(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 104: {
+                        hi_0 hi_02;
+                        jc_02 = hi_02;
+                        hi_02 = new hi_0(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 103: {
+                        KK0 kK0;
+                        jc_02 = kK0;
+                        kK0 = new KK0(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 102: {
+                        RV rV;
+                        jc_02 = rV;
+                        kl_02.Rj.get();
+                        rV = new RV();
+                        break block213;
+                    }
+                    case 101: {
+                        Ku0 ku0;
+                        n3 = kl_02.Rj.get();
+                        int n5 = kl_02.Rj.get() & 0xFF;
+                        short[][] sArrayArray = new short[n5][];
+                        for (int i = 0; i < n5; ++i) {
+                            short[] sArray;
+                            sArrayArray[i] = new short[kl_02.Rj.get() & 0xFF];
+                            for (int j = 0; j < (sArray = sArrayArray[i]).length; ++j) {
+                                sArray[j] = kl_02.Rj.getShort();
+                            }
+                        }
+                        kl_0 kl_02 = ku0;
+                        ku0 = new Ku0((byte)n3, (short[][])sArrayArray);
+                        break block212;
+                    }
+                    case 100: {
+                        JH0 jH0;
+                        n3 = kl_02.Rj.getShort();
+                        int n6 = kl_02.Rj.get() & 0xFF;
+                        short[] sArray = new short[n6];
+                        for (int i = 0; i < n6; ++i) {
+                            sArray[i] = kl_02.Rj.getShort();
+                        }
+                        kl_0 kl_02 = jH0;
+                        jH0 = new JH0((short)n3, sArray);
+                        break block212;
+                    }
+                    case 99: {
+                        V40 v40;
+                        jc_02 = v40;
+                        v40 = new V40(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 98: {
+                        byte by4 = kl_02.Rj.get();
+                        n3 = by4;
+                        short s = m3_0.bo0((byte)by4) ? kl_02.Rj.getShort() : (short)0;
+                        nj0_22 = new m3_0((byte)n3, s);
+                        gw_12 = nj0_22;
+                        break block212;
+                    }
+                    case 97: {
+                        nj0_22 = b30_0.f5((byte)kl_02.Rj.get());
+                        byte by5 = kl_02.Rj.get();
+                        boolean bl = kl_02.Rj.get() == 1;
+                        jc_02 = new jc_0((b30_0)nj0_22, by5, bl);
+                        break block213;
+                    }
+                    case 96: {
+                        P5 p5;
+                        jc_02 = p5;
+                        p5 = new P5(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 95: {
+                        pf0_1 pf0_12;
+                        jc_02 = pf0_12;
+                        pf0_12 = new pf0_1(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 94: {
+                        Dv0 dv0;
+                        jc_02 = dv0;
+                        dv0 = new Dv0(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 93: {
+                        byte by6 = kl_02.Rj.get();
+                        n3 = by6;
+                        short s = by6 == 2 ? kl_02.Rj.getShort() : (short)0;
+                        nj0_22 = new sg0_2((byte)n3, s);
+                        gw_12 = nj0_22;
+                        break block212;
+                    }
+                    case 92: {
+                        boolean bl = kl_02.Rj.get() == 1;
+                        jc_02 = new qx_2(bl);
+                        break block213;
+                    }
+                    case 91: {
+                        qn_0 qn_02;
+                        jc_02 = qn_02;
+                        qn_02 = new qn_0(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 90: {
+                        r30_0 r30_02;
+                        jc_02 = r30_02;
+                        r30_02 = new r30_0(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 89: {
+                        short s = kl_02.Rj.getShort();
+                        boolean bl = kl_02.Rj.get() == 1;
+                        jc_02 = new va0_0(s, bl);
+                        break block213;
+                    }
+                    case 88: {
+                        cc0_1 cc0_12;
+                        kl_0 kl_02 = cc0_12;
+                        cc0_12 = new cc0_1();
+                        break block212;
+                    }
+                    case 87: {
+                        TL tL;
+                        kl_0 kl_02 = tL;
+                        tL = new TL();
+                        break block212;
+                    }
+                    case 86: {
+                        kl_0 kl_02;
+                        byte by7 = kl_02.Rj.get();
+                        n3 = by7;
+                        if (com7__6.LPt8((byte)by7)) {
+                            com7__6 com7__62;
+                            nj0_22 = com7__62;
+                            com7__62 = new com7__6((gc_2)gc_2.z80.BM(kl_02.Rj.get()), (byte)n3);
+                            gw_12 = nj0_22;
+                            break block212;
+                        } else if (com7__6.Lm((byte)n3)) {
+                            com7__6 com7__63;
+                            nj0_22 = com7__63;
+                            com7__63 = new com7__6((byte)n3, kl_02.Rj.getShort());
+                            gw_12 = nj0_22;
+                            break block212;
+                        } else {
+                            com7__6 com7__64;
+                            kl_02 = com7__64;
+                            com7__64 = new com7__6((byte)n3);
+                        }
+                        break block212;
+                    }
+                    case 85: {
+                        cm0_1 cm0_12;
+                        jc_02 = cm0_12;
+                        cm0_12 = new cm0_1(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 84: {
+                        _throws _throws2;
+                        jc_02 = _throws2;
+                        _throws2 = new _throws(kl_02.pE(), kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 83: {
+                        lq_1 lq_12;
+                        jc_02 = lq_12;
+                        lq_12 = new lq_1(kl_02.Rj.getShort(), kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 82: {
+                        te_1 te_12;
+                        jc_02 = te_12;
+                        te_12 = new te_1(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 81: {
+                        kl_0 kl_02;
+                        byte by8 = kl_02.Rj.get();
+                        n3 = by8;
+                        if (by8 != 0) {
+                            VH0 vH0;
+                            kl_02 = vH0;
+                            vH0 = new VH0((byte)n3);
+                            break block212;
+                        } else {
+                            VH0 vH0;
+                            int n7 = kl_02.Rj.get();
+                            byte[][] byArrayArray = new byte[n7][];
+                            for (int i = 0; i < n7; ++i) {
+                                byte[] byArray;
+                                byArrayArray[i] = new byte[kl_02.Rj.get()];
+                                for (int j = 0; j < (byArray = byArrayArray[i]).length; ++j) {
+                                    byArray[j] = kl_02.Rj.get();
+                                }
+                            }
+                            kl_02 = vH0;
+                            vH0 = new VH0((byte)n3, (byte[][])byArrayArray);
+                        }
+                        break block212;
+                    }
+                    case 80: {
+                        ti0_0 ti0_02;
+                        jc_02 = ti0_02;
+                        ti0_02 = new ti0_0(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 79: {
+                        E70 e70;
+                        jc_02 = e70;
+                        e70 = new E70(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 78: {
+                        sf0_0 sf0_02;
+                        jc_02 = sf0_02;
+                        sf0_02 = new sf0_0(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 77: {
+                        bg0_1 bg0_12;
+                        jc_02 = bg0_12;
+                        bg0_12 = new bg0_1(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 76: {
+                        n3 = kl_02.Rj.get();
+                        byte by9 = kl_02.Rj.get();
+                        if (by9 == 0) {
+                            F8 f8;
+                            F8 f82 = f8;
+                            short s = kl_02.Rj.getShort();
+                            f8 = new F8((byte)n3, by9, kl_02.Rj.getShort(), s);
+                            gw_12 = f82;
+                            break block212;
+                        } else {
+                            F8 f8;
+                            F8 f83 = f8;
+                            f8 = new F8((byte)n3, by9, kl_02.Rj.getInt());
+                            gw_12 = f83;
+                        }
+                        break block212;
+                    }
+                    case 75: {
+                        AB aB;
+                        jc_02 = aB;
+                        aB = new AB(kl_02.Rj.getShort(), kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 74: {
+                        Xv0 xv0;
+                        jc_02 = xv0;
+                        xv0 = new Xv0(GV.Zd((byte)kl_02.Rj.get()));
+                        break block213;
+                    }
+                    case 73: {
+                        im_1 im_12;
+                        jc_02 = im_12;
+                        im_12 = new im_1(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 72: {
+                        yf_0 yf_02;
+                        kl_0 kl_02 = yf_02;
+                        yf_02 = new yf_0();
+                        break block212;
+                    }
+                    case 71: {
+                        vc0_2 vc0_22;
+                        jc_02 = vc0_22;
+                        vc0_22 = new vc0_2(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 70: {
+                        bi_2 bi_22;
+                        jc_02 = bi_22;
+                        bi_22 = new bi_2(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 69: {
+                        qy0_0 qy0_02;
+                        jc_02 = qy0_02;
+                        qy0_02 = new qy0_0(kl_02.Rj.get(), kl_02.Rj.get(), kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 68: {
+                        QG qG;
+                        jc_02 = qG;
+                        qG = new QG(kl_02.Rj.getShort(), kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 67: {
+                        bb0_1 bb0_12;
+                        kl_0 kl_02 = bb0_12;
+                        bb0_12 = new bb0_1();
+                        break block212;
+                    }
+                    case 66: {
+                        ak0_0 ak0_02;
+                        jc_02 = ak0_02;
+                        ak0_02 = new ak0_0(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 65: {
+                        p3_0 p3_02;
+                        jc_02 = p3_02;
+                        p3_02 = new p3_0(kl_02.Rj.getShort(), kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 64: {
+                        WF wF;
+                        jc_02 = wF;
+                        wF = new WF(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 63: {
+                        hd0_0 hd0_02;
+                        kl_0 kl_02 = hd0_02;
+                        hd0_02 = new hd0_0();
+                        break block212;
+                    }
+                    case 62: {
+                        COM1_ cOM1_;
+                        jc_02 = cOM1_;
+                        cOM1_ = new COM1_(i40_0.MG0((byte)kl_02.Rj.get()), i40_0.MG0((byte)kl_02.Rj.get()), kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 61: {
+                        byte by10 = kl_02.Rj.get();
+                        n3 = by10;
+                        short s = by10 == 1 ? kl_02.Rj.getShort() : (short)0;
+                        nj0_22 = new v60_0((byte)n3, s);
+                        gw_12 = nj0_22;
+                        break block212;
+                    }
+                    case 60: {
+                        ax_2 ax_22;
+                        byte by11 = kl_02.Rj.get();
+                        n3 = by11;
+                        nj0_22 = (nj0_2)new short[by11];
+                        for (int i = 0; i < n3; ++i) {
+                            nj0_22[i] = (nj0_2)kl_02.Rj.getShort();
+                        }
+                        kl_0 kl_02 = ax_22;
+                        ax_22 = new ax_2((short[])nj0_22);
+                        break block212;
+                    }
+                    case 59: {
+                        FA0 fA0;
+                        jc_02 = fA0;
+                        fA0 = new FA0(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 58: {
+                        vd0_1 vd0_12;
+                        jc_02 = vd0_12;
+                        vd0_12 = new vd0_1(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 57: {
+                        E8 e8;
+                        jc_02 = e8;
+                        e8 = new E8(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 56: {
+                        PM pM;
+                        jc_02 = pM;
+                        pM = new PM(kl_02.Rj.getShort(), (gc_2)gc_2.z80.BM(kl_02.Rj.get()), kl_02.Rj.get(), kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 55: {
+                        tz_2 tz_22;
+                        jc_02 = tz_22;
+                        tz_22 = new tz_2(kl_02.Rj.getShort(), kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 54: {
+                        qs_2 qs_22;
+                        jc_02 = qs_22;
+                        qs_22 = new qs_2(kl_02.Rj.getShort(), kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 53: {
+                        Kv0 kv0;
+                        jc_02 = kv0;
+                        kv0 = new Kv0(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 52: {
+                        ld0_0 ld0_02;
+                        jc_02 = ld0_02;
+                        ld0_02 = new ld0_0(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 51: {
+                        bv_0 bv_02;
+                        byte by12 = kl_02.Rj.get();
+                        n3 = by12;
+                        short s = kl_02.Rj.getShort();
+                        CH0 cH0 = kl_02.pE();
+                        short s2 = 0;
+                        short s3 = 0;
+                        if ((by12 & 1) != 0) {
+                            nj0_22 = kl_02.pE();
+                        }
+                        if ((n3 & 2) != 0 || (n3 & 8) != 0) {
+                            s2 = kl_02.Rj.getShort();
+                        }
+                        if ((n3 & 4) != 0) {
+                            s3 = kl_02.Rj.getShort();
+                        }
+                        kl_0 kl_02 = bv_02;
+                        bv_02 = new bv_0((byte)n3, s, cH0, (CH0)nj0_22, s2, s3);
+                        break block212;
+                    }
+                    case 50: {
+                        u10_0 u10_02;
+                        jc_02 = u10_02;
+                        u10_02 = new u10_0(kl_02.Rj.get(), kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 49: {
+                        A90 a90;
+                        jc_02 = a90;
+                        a90 = new A90(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 48: {
+                        ai_1 ai_12;
+                        jc_02 = ai_12;
+                        ai_12 = new ai_1(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 47: {
+                        m10_0 m10_02;
+                        jc_02 = m10_02;
+                        m10_02 = new m10_0(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 46: {
+                        yb0_1 yb0_12;
+                        jc_02 = yb0_12;
+                        yb0_12 = new yb0_1(kl_02.Rj.get(), kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 45: {
+                        sb0_0 sb0_02;
+                        jc_02 = sb0_02;
+                        sb0_02 = new sb0_0(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 44: {
+                        EJ eJ;
+                        jc_02 = eJ;
+                        eJ = new EJ(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 43: {
+                        ml_1 ml_12;
+                        jc_02 = ml_12;
+                        short s = kl_02.Rj.getShort();
+                        short s4 = kl_02.Rj.getShort();
+                        ml_12 = new ml_1(kl_02.Rj.get(), kl_02.Rj.getShort(), s, kl_02.Rj.getShort(), s4);
+                        break block213;
+                    }
+                    case 42: {
+                        iu_0 iu_02;
+                        jc_02 = iu_02;
+                        iu_02 = new iu_0(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 41: {
+                        n3 = kl_02.Rj.getShort();
+                        if (n3 == 273) {
+                            nj0_22 = kl_02.pE();
+                        }
+                        KE kE = new KE((short)n3, (CH0)nj0_22, kl_02.Rj.getShort());
+                        gw_12 = kE;
+                        break block212;
+                    }
+                    case 40: {
+                        jp_2 jp_22;
+                        kl_0 kl_02 = jp_22;
+                        jp_22 = new jp_2();
+                        break block212;
+                    }
+                    case 39: {
+                        C20 c20;
+                        jc_02 = c20;
+                        c20 = new C20(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 38: {
+                        BA0 bA0;
+                        kl_0 kl_02 = bA0;
+                        bA0 = new BA0();
+                        break block212;
+                    }
+                    case 37: {
+                        QK0 qK0;
+                        kl_0 kl_02 = qK0;
+                        qK0 = new QK0();
+                        break block212;
+                    }
+                    case 36: {
+                        IP iP;
+                        jc_02 = iP;
+                        iP = new IP(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 35: {
+                        boolean bl = (kl_02.Rj.get() & 0xFF) == 1;
+                        jc_02 = new p80_0(bl);
+                        break block213;
+                    }
+                    case 34: {
+                        pz_1 pz_12;
+                        kl_0 kl_02 = pz_12;
+                        pz_12 = new pz_1();
+                        break block212;
+                    }
+                    case 33: {
+                        qa_0 qa_02;
+                        jc_02 = qa_02;
+                        qa_02 = new qa_0(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 32: {
+                        fj_1 fj_12;
+                        jc_02 = fj_12;
+                        fj_12 = new fj_1(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 31: {
+                        MQ mQ;
+                        short s;
+                        n3 = kl_02.Rj.getShort();
+                        byte by13 = kl_02.Rj.get();
+                        short[] sArray = new short[4];
+                        for (s = 0; s < 4; ++s) {
+                            sArray[s] = kl_02.Rj.getShort();
+                        }
+                        s = kl_02.Rj.getShort();
+                        short s5 = kl_02.Rj.getShort();
+                        byte by14 = kl_02.Rj.get();
+                        byte[] byArray = gc_2.PR((int)kl_02.Rj.getInt());
+                        i40_0 i40_02 = i40_0.MG0((byte)kl_02.Rj.get());
+                        kl_0 kl_02 = i40_0.MG0((byte)kl_02.Rj.get());
+                        MQ mQ2 = mQ;
+                        mQ = new MQ((short)n3, by13, sArray, s, s5, by14, byArray, i40_02, (i40_0)kl_02);
+                        gw_12 = mQ2;
+                        break block212;
+                    }
+                    case 30: {
+                        na0_1 na0_12;
+                        jc_02 = na0_12;
+                        na0_12 = new na0_1(kl_02.Rj.get(), kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 29: {
+                        td_0 td_02;
+                        jc_02 = td_02;
+                        td_02 = new td_0(kl_02.Rj.get(), i40_0.MG0((byte)kl_02.Rj.get()));
+                        break block213;
+                    }
+                    case 28: {
+                        byte by15 = kl_02.Rj.get();
+                        byte by16 = kl_02.Rj.get();
+                        boolean bl = kl_02.Rj.get() == 1;
+                        jc_02 = new UP(by15, by16, bl);
+                        break block213;
+                    }
+                    case 27: {
+                        z4_0 z4_02;
+                        jc_02 = z4_02;
+                        z4_02 = new z4_0(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 26: {
+                        g1_0 g1_02;
+                        jc_02 = g1_02;
+                        g1_02 = new g1_0(fq_2.NG((byte)kl_02.Rj.get()), kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 25: {
+                        _protected _protected2;
+                        jc_02 = _protected2;
+                        _protected2 = new _protected(kl_02.Rj.get(), fq_2.NG((byte)kl_02.Rj.get()), kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 24: {
+                        sl_0 sl_02;
+                        byte by17 = kl_02.Rj.get();
+                        n3 = by17;
+                        short s = kl_02.Rj.getShort();
+                        short s6 = 0;
+                        if (by17 == 1) {
+                            s6 = kl_02.Rj.getShort();
+                        }
+                        kl_0 kl_02 = sl_02;
+                        sl_02 = new sl_0((byte)n3, s, s6);
+                        break block212;
+                    }
+                    case 23: {
+                        byte by18 = kl_02.Rj.get();
+                        short s = kl_02.Rj.getShort();
+                        boolean bl = kl_02.Rj.get() == 1;
+                        jc_02 = new prn__5(s, by18, bl);
+                        break block213;
+                    }
+                    case 22: {
+                        t10_0 t10_02;
+                        jc_02 = t10_02;
+                        t10_02 = new t10_0(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 21: {
+                        Hv0 hv0;
+                        jc_02 = hv0;
+                        hv0 = new Hv0(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 20: {
+                        jg_2 jg_22;
+                        kl_0 kl_02 = jg_22;
+                        jg_22 = new jg_2();
+                        break block212;
+                    }
+                    case 19: {
+                        t90_0 t90_02;
+                        jc_02 = t90_02;
+                        t90_02 = new t90_0(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 18: {
+                        nb0_0 nb0_02;
+                        jc_02 = nb0_02;
+                        nb0_02 = new nb0_0(kl_02.Rj.getShort(), kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 17: {
+                        Iz0 iz0;
+                        int n8;
+                        n3 = kl_02.Rj.get();
+                        int n9 = kl_02.Rj.get();
+                        gc_2[] gc_2Array = new gc_2[n9];
+                        for (n8 = 0; n8 < n9; ++n8) {
+                            gc_2Array[n8] = (gc_2)gc_2.z80.BM(kl_02.Rj.get());
+                        }
+                        n8 = kl_02.Rj.get();
+                        int n10 = kl_02.Rj.get();
+                        byte[][] byArrayArray = new byte[n10][];
+                        for (int i = 0; i < n10; ++i) {
+                            byte[] byArray = new byte[n9];
+                            kl_02.Rj.get(byArray);
+                            byArrayArray[i] = byArray;
+                        }
+                        kl_0 kl_02 = iz0;
+                        iz0 = new Iz0((byte)n3, gc_2Array, (byte)n8, (byte[][])byArrayArray);
+                        break block212;
+                    }
+                    case 16: {
+                        ea_0 ea_02;
+                        jc_02 = ea_02;
+                        ea_02 = new ea_0(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 15: {
+                        boolean bl = kl_02.Rj.get() == 1;
+                        jc_02 = new tf0_2(bl);
+                        break block213;
+                    }
+                    case 14: {
+                        v30_0 v30_02;
+                        jc_02 = v30_02;
+                        v30_02 = new v30_0(kl_02.Rj.getShort(), b30_0.f5((byte)kl_02.Rj.get()), kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 13: {
+                        xr_1 xr_12;
+                        jc_02 = xr_12;
+                        byte by19 = kl_02.Rj.get();
+                        xr_12 = new xr_1((d70_0)t_0.BI0((Object)d70_0.UB.BM(by19), d70_0.class, (byte)by19), kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 12: {
+                        ba_1 ba_12;
+                        jc_02 = ba_12;
+                        byte by20 = kl_02.Rj.get();
+                        ba_12 = new ba_1((d70_0)t_0.BI0((Object)d70_0.UB.BM(by20), d70_0.class, (byte)by20));
+                        break block213;
+                    }
+                    case 11: {
+                        WK0 wK0;
+                        jc_02 = wK0;
+                        wK0 = new WK0(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 10: {
+                        qv_2 qv_22;
+                        jc_02 = qv_22;
+                        qv_22 = new qv_2(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case 8: {
+                        boolean bl = (kl_02.Rj.get() & 0xFF) == 1;
+                        jc_02 = new aq_1(bl);
+                        break block213;
+                    }
+                    case 7: {
+                        boolean bl = (kl_02.Rj.get() & 0xFF) == 1;
+                        jc_02 = new s00_0(bl);
+                        break block213;
+                    }
+                    case 6: {
+                        OK oK;
+                        jc_02 = oK;
+                        oK = new OK(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 5: {
+                        boolean bl = (kl_02.Rj.get() & 0xFF) == 1;
+                        jc_02 = new R50(bl);
+                        break block213;
+                    }
+                    case 4: {
+                        gw_12 = gw_1.class$;
+                        break block212;
+                    }
+                    case 3: {
+                        o0_0 o0_02;
+                        jc_02 = o0_02;
+                        o0_02 = new o0_0(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case 2: {
+                        byte by21 = kl_02.Rj.get();
+                        n3 = by21;
+                        byte by22 = kl_02.Rj.get();
+                        short s = by21 == 1 ? kl_02.Rj.getShort() : (short)0;
+                        if (n3 == 3) {
+                            nj0_22 = kl_02.pE();
+                        }
+                        UN uN = new UN((byte)n3, by22, (CH0)nj0_22, s);
+                        gw_12 = uN;
+                        break block212;
+                    }
+                    case 1: {
+                        xy_0 xy_02;
+                        n3 = kl_02.Rj.get();
+                        byte by23 = kl_02.Rj.get();
+                        boolean bl = (by23 & 0x80) == 0;
+                        gc_2 gc_22 = (gc_2)gc_2.z80.BM((byte)(by23 & 0x7F));
+                        xy_0 xy_03 = xy_02;
+                        byte by24 = kl_02.Rj.get();
+                        xy_02 = new xy_0((byte)n3, gc_22, kl_02.Rj.get(), by24, bl);
+                        gw_12 = xy_03;
+                        break block212;
+                    }
+                    case 0: {
+                        ka_0 ka_02;
+                        jc_02 = ka_02;
+                        ka_02 = new ka_0(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case -1: {
+                        od_2 od_22;
+                        jc_02 = od_22;
+                        od_22 = new od_2(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case -2: {
+                        DS dS;
+                        jc_02 = dS;
+                        dS = new DS(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case -3: {
+                        ip_0 ip_02;
+                        jc_02 = ip_02;
+                        ip_02 = new ip_0(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case -4: {
+                        xg0_1 xg0_12;
+                        jc_02 = xg0_12;
+                        xg0_12 = new xg0_1(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case -5: {
+                        rw_2 rw_22;
+                        jc_02 = rw_22;
+                        rw_22 = new rw_2(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case -6: {
+                        dh_0 dh_02;
+                        jc_02 = dh_02;
+                        dh_02 = new dh_0(GV.Zd((byte)kl_02.Rj.get()), kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case -7: {
+                        dk_1 dk_12;
+                        kl_0 kl_02 = dk_12;
+                        dk_12 = new dk_1();
+                        break block212;
+                    }
+                    case -8: {
+                        l10_0 l10_02;
+                        jc_02 = l10_02;
+                        l10_02 = new l10_0(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case -9: {
+                        xp_0 xp_02;
+                        jc_02 = xp_02;
+                        xp_02 = new xp_0(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case -10: {
+                        y9_0 y9_02;
+                        jc_02 = y9_02;
+                        y9_02 = new y9_0(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case -11: {
+                        jp_1 jp_12;
+                        jc_02 = jp_12;
+                        jp_12 = new jp_1(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case -12: {
+                        av_0 av_02;
+                        jc_02 = av_02;
+                        av_02 = new av_0(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case -13: {
+                        as_1 as_12;
+                        jc_02 = as_12;
+                        as_12 = new as_1(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case -14: {
+                        ah_0 ah_02;
+                        int n11;
+                        byte by25 = kl_02.Rj.get();
+                        n3 = by25;
+                        nj0_22 = new gc_2[by25];
+                        for (n11 = 0; n11 < n3; ++n11) {
+                            nj0_22[n11] = (gc_2)gc_2.z80.BM(kl_02.Rj.get());
+                        }
+                        n3 = kl_02.Rj.get();
+                        n11 = kl_02.Rj.get();
+                        byte[] byArray = new byte[n11];
+                        for (int i = 0; i < n11; ++i) {
+                            byArray[i] = kl_02.Rj.get();
+                        }
+                        kl_0 kl_02 = ah_02;
+                        ah_02 = new ah_0((gc_2[])nj0_22, (byte)n3, byArray);
+                        break block212;
+                    }
+                    case -15: {
+                        ph0_1 ph0_12;
+                        jc_02 = ph0_12;
+                        ph0_12 = new ph0_1(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case -16: {
+                        byte by26 = kl_02.Rj.get();
+                        boolean bl = kl_02.Rj.get() == 1;
+                        jc_02 = new lu0_0(by26, bl);
+                        break block213;
+                    }
+                    case -17: {
+                        kl_0 kl_02;
+                        byte by27 = kl_02.Rj.get();
+                        n3 = by27;
+                        if (by27 == 33) {
+                            u30_0 u30_02;
+                            nj0_22 = u30_02;
+                            int n12 = n3;
+                            n3 = kl_02.Rj.get();
+                            CH0 cH0 = kl_02.pE();
+                            kl_02 = gc_2.rY((byte)kl_02.Rj.get());
+                            u30_02 = new u30_0((byte)n12, (byte)n3, cH0, (gc_2[])kl_02);
+                            gw_12 = nj0_22;
+                            break block212;
+                        } else {
+                            u30_0 u30_03;
+                            nj0_22 = u30_03;
+                            u30_03 = new u30_0((byte)n3, kl_02.Rj.get(), kl_02.pE());
+                            gw_12 = nj0_22;
+                        }
+                        break block212;
+                    }
+                    case -18: {
+                        ei0_0 ei0_02;
+                        jc_02 = ei0_02;
+                        ei0_02 = new ei0_0(kl_02.Rj.get(), kl_02.Rj.get(), kl_02.Rj.get());
+                        break block213;
+                    }
+                    case -19: {
+                        js0 js02;
+                        jc_02 = js02;
+                        js02 = new js0(kl_02.Rj.get());
+                        break block213;
+                    }
+                    case -20: {
+                        TR tR;
+                        jc_02 = tR;
+                        kl_02.Rj.get();
+                        tR = new TR();
+                        break block213;
+                    }
+                    case -21: {
+                        l7_0 l7_02;
+                        jc_02 = l7_02;
+                        l7_02 = new l7_0(gc_2.PR((int)kl_02.Rj.getInt()));
+                        break block213;
+                    }
+                    case -22: {
+                        cx0 cx02;
+                        jc_02 = cx02;
+                        cx02 = new cx0(kl_02.pE(), kl_02.q60());
+                        break block213;
+                    }
+                    case -26: {
+                        ay0_0 ay0_02;
+                        jc_02 = ay0_02;
+                        ay0_02 = new ay0_0(kl_02.Rj.getShort());
+                        break block213;
+                    }
+                    case -27: 
+                    case -25: 
+                    case -24: 
+                    case -23: {
+                        byte by14;
+                        kl_0 kl_02;
+                        byte by28 = kl_02.Rj.get();
+                        int n13 = kl_02.Rj.get();
+                        CH0[] cH0Array = new CH0[n13];
+                        short[] sArray = new short[n13];
+                        for (by14 = 0; by14 < n13; ++by14) {
+                            cH0Array[by14] = kl_02.pE();
+                            sArray[by14] = kl_02.Rj.getShort();
+                        }
+                        switch (n3) {
+                            default: {
+                                return null;
+                            }
+                            case -23: {
+                                kl_0 kl_03;
+                                kl_02 = kl_03;
+                                kl_03 = new kl_0(by28, cH0Array, sArray);
+                                break;
+                            }
+                            case -24: {
+                                Zp0 zp0;
+                                kl_02 = zp0;
+                                zp0 = new Zp0(by28, cH0Array, sArray);
+                                break;
+                            }
+                            case -25: {
+                                ks_0 ks_02;
+                                kl_02 = ks_02;
+                                ks_02 = new ks_0(by28, cH0Array, sArray);
+                                break;
+                            }
+                            case -27: {
+                                uz_0 uz_02;
+                                kl_02 = uz_02;
+                                uz_02 = new uz_0(by28, cH0Array, sArray);
+                                break;
+                            }
+                        }
+                        break block212;
+                    }
+                    case -28: {
+                        jw_1 jw_12;
+                        kl_0 kl_02 = jw_12;
+                        jw_12 = new jw_1();
+                        break block212;
+                    }
+                    case -29: {
+                        byte by29 = kl_02.Rj.get();
+                        byte by30 = kl_02.Rj.get();
+                        byte by31 = kl_02.throws$();
+                        boolean bl = kl_02.throws$() == 1;
+                        jc_02 = new he0_0(by29, by30, by31, bl);
+                        break block213;
+                    }
+                    case -30: {
+                        byte by32 = kl_02.throws$();
+                        byte by33 = kl_02.throws$();
+                        byte by34 = kl_02.throws$();
+                        byte by35 = kl_02.throws$();
+                        byte by14 = kl_02.mC0();
+                        kl_02.mC0();
+                        boolean bl = kl_02.throws$() == 1;
+                        jc_02 = new pw0_0(by32, by33, by34, by35, (short)by14, bl);
+                        break block213;
+                    }
+                    case -31: {
+                        H3 h3;
+                        jc_02 = h3;
+                        h3 = new H3(kl_02.throws$());
+                        break block213;
+                    }
+                    case -32: {
+                        com9__1 com9__12;
+                        byte by36 = kl_02.throws$();
+                        n3 = by36;
+                        nj0_22 = new CH0[by36];
+                        for (int i = 0; i < n3; ++i) {
+                            nj0_22[i] = kl_02.pE();
+                        }
+                        kl_0 kl_02 = com9__12;
+                        com9__12 = new com9__1((CH0[])nj0_22);
+                        break block212;
+                    }
+                    case -33: {
+                        kl_0 kl_02;
+                        byte by37 = kl_02.throws$();
+                        n3 = by37;
+                        if (by37 != 3 && n3 != 4 && n3 != 5) {
+                            nj0_2 nj0_23;
+                            kl_02 = nj0_23;
+                            nj0_23 = new nj0_2((byte)n3);
+                            break block212;
+                        } else {
+                            nj0_2 nj0_24;
+                            nj0_22 = nj0_24;
+                            nj0_24 = new nj0_2((byte)n3, kl_02.q60());
+                            gw_12 = nj0_22;
+                        }
+                        break block212;
+                    }
+                    case -34: {
+                        ya_0 ya_02;
+                        jc_02 = ya_02;
+                        ya_02 = new ya_0(kl_02.throws$());
+                        break block213;
+                    }
+                    case -35: {
+                        he_1 he_12;
+                        short[] sArray = new short[4];
+                        nj0_22 = (nj0_2)new byte[4];
+                        for (int i = 0; i < 4; ++i) {
+                            sArray[i] = kl_02.mC0();
+                            nj0_22[i] = (nj0_2)kl_02.throws$();
+                        }
+                        kl_0 kl_02 = he_12;
+                        he_12 = new he_1(sArray, (byte[])nj0_22);
+                        break block212;
+                    }
+                    case -36: {
+                        e40 e402;
+                        kl_02.throws$();
+                        n3 = kl_02.mC0();
+                        int n14 = kl_02.throws$();
+                        CH0[] cH0Array = new CH0[n14];
+                        for (int i = 0; i < n14; ++i) {
+                            cH0Array[i] = kl_02.pE();
+                        }
+                        kl_0 kl_02 = e402;
+                        e402 = new e40((short)n3, cH0Array);
+                        break block212;
+                    }
+                    case -37: {
+                        RS rS;
+                        byte by38 = kl_02.throws$();
+                        n3 = by38;
+                        nj0_22 = i40_0.Gc;
+                        if (by38 == 1) {
+                            nj0_22 = i40_0.MG0((byte)kl_02.throws$());
+                        }
+                        kl_0 kl_02 = rS;
+                        rS = new RS((byte)n3, (i40_0)nj0_22);
+                        break block212;
+                    }
+                    case -38: {
+                        ZC0 zC0;
+                        jc_02 = zC0;
+                        zC0 = new ZC0(kl_02.throws$(), kl_02.throws$());
+                        break block213;
+                    }
+                    case -39: 
+                }
+                jc_02 = pk_22;
+                pk_22 = new pk_2(kl_02.throws$(), i40_0.MG0((byte)kl_02.throws$()));
+            }
+            gw_12 = kl_02 = jc_02;
+        }
+        if (kl_02 == null) {
+            return null;
+        }
+        kl_02.pj0 = by;
+        if (n2 == by) {
+            void var5_49;
+            kl_02.jA0 = var5_49;
+            kl_02.pj0 = (byte)n2;
+        }
+        if (n != by) return kl_02;
+        kl_02.fe0 = var7_53;
+        int n15 = 2;
+        kl_02.pj0 = (byte)(kl_02.pj0 | n15);
+        return kl_02;
+    }
+}

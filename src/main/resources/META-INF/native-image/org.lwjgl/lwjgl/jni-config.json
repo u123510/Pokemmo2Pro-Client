@@ -1,0 +1,6 @@
+[
+{
+  "name":"org.lwjgl.system.CallbackI",
+  "methods":[{"name":"callback","parameterTypes":["long","long"] }]
+}
+]

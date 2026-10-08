@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<configuration>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>[%p %d{yyyy-MM-dd HH:mm:ss zzz}][%t] %c:%L - %m%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+    <appender name="CONSOLE_TO_FILE" class="ch.qos.logback.core.FileAppender">
+        <file>log/console.log</file>
+        <append>false</append>
+        <encoder>
+            <pattern>[%p %d{yyyy-MM-dd HH:mm:ss zzz}][%t] %c:%L - %m%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+    <appender name="MOD_APPENDER" class="ch.qos.logback.core.FileAppender">
+        <file>log/mods.log</file>
+        <append>false</append>
+        <encoder>
+            <pattern>[%p %d{yyyy-MM-dd HH:mm:ss zzz}] - %m%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+    <logger name="mod" additivity="false">
+       <appender-ref ref="MOD_APPENDER"/>
+    </logger>
+    <root level="DEBUG">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="CONSOLE_TO_FILE"/>
+    </root>
+</configuration>

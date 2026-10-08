@@ -1,0 +1,2 @@
+package ch.qos.logback.core.model;
+public class ImportModel extends Model { private static final long serialVersionUID=1L; String className; public ImportModel(){} public ImportModel makeNewInstance(){return new ImportModel();} public void mirror(Model m){super.mirror(m);className=((ImportModel)m).className;} public String getClassName(){return className;} public void setClassName(String v){className=v;} }

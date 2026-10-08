@@ -1,0 +1,3 @@
+package ch.qos.logback.core.model;
+import java.util.Objects;
+public class DefineModel extends NamedComponentModel { private static final long serialVersionUID=6209642548924431065L; String scopeStr; public DefineModel(){} public DefineModel makeNewInstance(){return new DefineModel();} public void mirror(Model m){super.mirror(m);scopeStr=((DefineModel)m).scopeStr;} public String getScopeStr(){return scopeStr;} public void setScopeStr(String v){scopeStr=v;} public int hashCode(){return 31*super.hashCode()+Objects.hash(scopeStr);} public boolean equals(Object o){return this==o||(super.equals(o)&&getClass()==o.getClass()&&Objects.equals(scopeStr,((DefineModel)o).scopeStr));} }

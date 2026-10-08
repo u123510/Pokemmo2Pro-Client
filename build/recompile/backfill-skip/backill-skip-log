@@ -1,0 +1,170 @@
+Backfill skip source repair log
+Date: 2026-08-18
+Reference: Recaf MCP JASM from 28887-renamed.jar
+Delivery target: project src/main/java packages
+
+Repaired classes
+- f.XV
+  - Source: src/main/java/f/XV.java
+  - Restored constructor: XV(FJ, int)
+  - Restored method: KN()Lf/i4_0;
+  - Behavior: load image data, copy the selected 32x32 region, dispose the temporary image, return the result.
+  - Verification: javac --release 17 and Maven compile succeeded; javap descriptors match Recaf JASM.
+  - Maven output: target/classes/f/XV.class
+- f.av0_0
+  - Source: src/main/java/f/av0_0.java
+  - Restored constructor: av0_0(CH0[])
+  - Restored method: ig0(Lf/k20_0;Ljava/nio/ByteBuffer;)V
+  - Behavior: write the entry count and each CH0.Sa value to the byte buffer.
+  - Verification: javac --release 17 and Maven compile succeeded; javap descriptors match Recaf JASM.
+  - Maven output: target/classes/f/av0_0.class
+
+Recaf usage
+- Recaf JASM was used as the bytecode reference.
+- Final repaired artifacts are the Java sources under src/main/java/f.
+
+Completed in this run
+- ch.qos.logback.classic.helpers.MDCInsertingServletFilter
+  - Source: src/main/java/ch/qos/logback/classic/helpers/MDCInsertingServletFilter.java
+  - Restored from Recaf JASM: Filter lifecycle, MDC request fields, and try/finally cleanup.
+- ch.qos.logback.classic.selector.servlet.ContextDetachingSCL
+  - Source: src/main/java/ch/qos/logback/classic/selector/servlet/ContextDetachingSCL.java
+  - Restored from Recaf JASM: JNDI context lookup, selector detach, warning, and stop flow.
+- ch.qos.logback.classic.selector.servlet.LoggerContextFilter
+  - Source: src/main/java/ch/qos/logback/classic/selector/servlet/LoggerContextFilter.java
+  - Restored from Recaf JASM: local ContextJNDISelector setup and finally cleanup.
+- ch.qos.logback.classic.servlet.LogbackServletContainerInitializer
+  - Source: src/main/java/ch/qos/logback/classic/servlet/LogbackServletContainerInitializer.java
+  - Restored from Recaf JASM: configuration checks and listener registration.
+- ch.qos.logback.classic.servlet.LogbackServletContextListener
+  - Source: src/main/java/ch/qos/logback/classic/servlet/LogbackServletContextListener.java
+  - Restored from Recaf JASM: ContextAwareBase setup and LoggerContext stop flow.
+- ch.qos.logback.classic.ViewStatusMessagesServlet
+  - Source: src/main/java/ch/qos/logback/classic/ViewStatusMessagesServlet.java
+  - Restored from Recaf JASM: status manager lookup and page title generation.
+- ch.qos.logback.core.joran.conditional.PropertyEvalScriptBuilder
+  - Source: src/main/java/ch/qos/logback/core/joran/conditional/PropertyEvalScriptBuilder.java
+  - Restored from Recaf JASM: Janino evaluator setup, script cooking, construction, and property container injection.
+- ch.qos.logback.core.net.LoginAuthenticator
+  - Source: src/main/java/ch/qos/logback/core/net/LoginAuthenticator.java
+  - Restored from Recaf JASM: credentials storage and PasswordAuthentication creation.
+- ch.qos.logback.core.status.ViewStatusMessagesServletBase
+  - Source: src/main/java/ch/qos/logback/core/status/ViewStatusMessagesServletBase.java
+  - Restored from Recaf JASM: HTML status page, CSS, status rows, throwable rendering, and clear action.
+- org.lwjgl.glfw.GLFWVulkan
+  - Source: src/main/java/org/lwjgl/glfw/GLFWVulkan.java
+  - Restored from Recaf JASM: Vulkan JNI wrappers, memory-stack helpers, path override, and Functions holder.
+
+Verification scope
+- All ten classes above were rebuilt from Recaf disassemble JASM only.
+- No Recaf source/decompile output was used.
+- No build/recompile source was used as a repair target.
+- Final delivery files are under src/main/java.
+
+
+hard-group-011 sequential restoration
+- Source list: build/recompile/group/hard-15-20260818-135455/hard-group-011.txt
+- Current class: f.Dm0
+- Reference: current Recaf workspace 28887-renamed.jar, disassemble JASM only.
+- Final source: src/main/java/f/Dm0.java
+- Constructor and method order follow the Recaf JASM sequence.
+- No build-generated Java or Recaf decompile output was used as semantic input.
+- No Recaf source code was read.
+
+- Revalidated class: f.Dr0
+- Corrected Sx0 character sequence to match JASM (?'.,; with no extra space).
+- Recomputed clinit operand-stack residue: Vg (incremental) defaults to Boolean.TRUE; id0 (unique_atlas) and EC0 (markup) default to Boolean.FALSE.
+- Static comparison passed: 30 fields and order, 6 methods, 28 registration names and order, and decoded Sx0 length 226 match current Recaf JASM.
+
+- Completed class: f.Dt0
+- Final source: src/main/java/f/Dt0.java
+- Upstream reference: third-party source LibGDX 1.12.1 Lwjgl3Application.java and Sync.java.
+- Mapping reference: libs/28887.tiny, f/Dt0 -> com/badlogic/gdx/backends/lwjgl3/Lwjgl3Application.
+- Runtime signature reference: current Recaf f.Dt0 get_class_detail and disassemble JASM from 28887-renamed.jar.
+- Preserved the renamed runtime types es_1, hl_2, u90_0, and ee_2; the tiny file names their pre-rename counterparts.
+- Restored 14 fields and 21 methods, including the bytecode-inlined window creation and frame synchronization flow.
+- Static comparison passed: 14 fields, 19 ordinary methods plus 2 constructors, and git diff --check.
+- Follow-up source fixes: replaced unresolved synthetic Fz0/Dx0 field reads with their initialization effects; cast all four GL debug callback null arguments to IntBuffer to select the JASM descriptor.
+- Follow-up static check passed: no Fz0/Dx0 references remain and all four debug calls use the IntBuffer overload.
+- No build-generated Java, Recaf decompile output, or Recaf source code was used as semantic input.
+- No Maven compile or runtime test was executed.
+
+- Completed class: f.Dv0
+- Final source: src/main/java/f/Dv0.java
+- Mapping reference: libs/28887.tiny, f/Dv0 -> f/PokemonMagnetRiseEffect.
+- No matching third-party LibGDX class exists for this mapping; restored from current Recaf JASM.
+- Preserved class order: one byte field Bu, constructor, BL0, and IE0.
+- Preserved IE0 branch semantics: Bu=1 uses message key 661, Bu=0 uses 658, other values return; formatting uses sm0_0.fg0((byte)2, lpt6__2.Q80, 14, ..., {target.A60()}) and ML0.wJ(message, "", null).
+- Static signature and opcode checks passed; no Maven compile or runtime test was executed.
+
+- Completed class: f.Dz0
+- Final source: src/main/java/f/Dz0.java
+- Reference: current Recaf JASM; no tiny mapping entry exists for this custom class.
+- Restored little-endian offset-table loading, rotation, tile decoding, and 8x8 indexed pixel expansion.
+- Static source checks passed; no Maven compile or runtime test was executed.
+
+- Completed class: f.E10
+- Final source: src/main/java/f/E10.java
+- Mapping reference: libs/28887.tiny, f/E10 -> f/GiftShopItemType.
+- Restored constructor and static initialization for all nine item types, cloned pN array, and bm0_1 registration.
+- Static source checks passed; no Maven compile or runtime test was executed.
+
+- Completed class: f.E2
+- Final source: src/main/java/f/E2.java
+- Reference: current Recaf JASM; no tiny mapping entry exists for this custom table model.
+- Restored table arrays, localized headers, date formatting, cell rendering/cache callbacks, and column value accessors.
+- Static source checks passed; no Maven compile or runtime test was executed.
+
+- Completed class: f.E3
+- Final source: src/main/java/f/E3.java
+- Mapping reference: libs/28887.tiny, f/E3 -> f/PokemonSpriteLoader.
+- Restored binary header validation, sprite metadata arrays, descriptor parsing, and mismatch exception.
+- Static source checks passed; no Maven compile or runtime test was executed.
+
+- Completed class: f.E30
+- Final source: src/main/java/f/E30.java
+- Reference: current Recaf JASM; no tiny mapping target provided.
+- Restored RE type 152 constructor and ByteBuffer serialization, including optional form data and metadata entries.
+- Static source checks passed; no Maven compile or runtime test was executed.
+
+- Completed class: f.E5
+- Final source: src/main/java/f/E5.java
+- Mapping reference: libs/28887.tiny, f/E5 -> f/ExchangeItemData.
+- Restored field assignment order and gu0 lookup initialization.
+- Static source checks passed; no Maven compile or runtime test was executed.
+
+- Completed class: f.E70
+- Final source: src/main/java/f/E70.java
+- Mapping reference: libs/28887.tiny, f/E70 -> f/PokemonFormChangeEffect.
+- Restored form-change state mutation, animation queue insertion, localized message, and sprite reset.
+- Static source checks passed; no Maven compile or runtime test was executed.
+
+- Completed class: f.E8
+- Final source: src/main/java/f/E8.java
+- Mapping reference: libs/28887.tiny, f/E8 -> f/PokemonBerryIncreaseCritRateEffect.
+- Restored item lookup and two-argument localized message formatting.
+- Static source checks passed; no Maven compile or runtime test was executed.
+
+- Completed class: f.E80
+- Final source: src/main/java/f/E80.java
+- Mapping reference: libs/28887.tiny, f/E80 -> f/TmButton.
+- Restored button construction, theme attributes, drag/drop state machine, layout behavior, item replacement, and click callback.
+- Static source checks passed; no Maven compile or runtime test was executed.
+
+- Completed class: f.Dr0
+- Final source: src/main/java/f/Dr0.java
+- Reference: current Recaf disassemble JASM, static initialization and six methods processed in class-file order.
+- No build-generated Java or Recaf decompile output was used as semantic input.
+- No Recaf source code was read.
+
+- Completed class: f.Do0
+- Final source: src/main/java/f/Do0.java
+- Reference: current Recaf disassemble JASM, constructor and nd0 method order preserved.
+- No build-generated Java or Recaf decompile output was used as semantic input.
+- No Recaf source code was read.
+
+- Completed class: f.Dn0
+- Final source: src/main/java/f/Dn0.java
+- Reference: current Recaf disassemble JASM, all 45 methods processed in class-file order.
+- No build-generated Java or Recaf decompile output was used as semantic input.
+- No Recaf source code was read.

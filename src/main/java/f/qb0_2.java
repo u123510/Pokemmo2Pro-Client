@@ -1,0 +1,16 @@
+package f;
+
+import cn.pokemmo.battle.animation.move.gen1.FireSpinAnimation;
+
+/**
+ * 宝可梦对战技能招式动画垫片 - 火焰旋涡 (FireSpin)
+ * 技能编号: 83
+ * 原始类: f.qb0_2
+ * 现代实现: cn.pokemmo.battle.animation.move.gen1.FireSpinAnimation
+ */
+public final class qb0_2 extends FireSpinAnimation {
+
+    public qb0_2(PF pF) {
+        super(pF);
+    }
+}

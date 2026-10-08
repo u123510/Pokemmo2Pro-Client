@@ -1,0 +1,168 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package cn.pokemmo.audio.envelope;
+
+import f.*;
+
+import f.wx_2;
+
+/*
+ * Renamed from f.n70
+ */
+public abstract class VolumeFadeEnvelope {
+    public static final short[] l3;
+    public static final short[] NG;
+    public static final short[][] ll;
+    public static final short[] Iz;
+    public static final wx_2 xg;
+
+    static {
+        short[] sArray = new short[25];
+        short[] sArray2 = sArray;
+        sArray[0] = 5004;
+        sArray2[1] = 5003;
+        sArray2[2] = 5002;
+        sArray2[3] = 5012;
+        sArray2[4] = 5016;
+        sArray2[5] = 5007;
+        sArray2[6] = 5576;
+        sArray2[7] = 5013;
+        sArray2[8] = 5492;
+        sArray2[9] = 5497;
+        sArray2[10] = 5014;
+        sArray2[11] = 5495;
+        sArray2[12] = 5493;
+        sArray2[13] = 5496;
+        sArray2[14] = 5494;
+        sArray2[15] = 5011;
+        sArray2[16] = 5498;
+        sArray2[17] = 5008;
+        sArray2[18] = 5006;
+        sArray2[19] = 5500;
+        sArray2[20] = 5015;
+        sArray2[21] = 5009;
+        sArray2[22] = 5005;
+        sArray2[23] = 5499;
+        sArray2[24] = 5010;
+        l3 = sArray2;
+        NG = new short[]{1180, 1181, 1182, 1183, 1184, 1185, 1186, 1187, 1188, 1189, 1195, 1196, 1197, 1198};
+        short[][] sArrayArray = new short[18][];
+        short[] sArray3 = new short[2];
+        sArray2 = sArray3;
+        sArray3[0] = 487;
+        sArray3[1] = 1023;
+        sArrayArray[0] = sArray2;
+        short[] sArray4 = new short[2];
+        sArray2 = sArray4;
+        sArray4[0] = 1003;
+        sArray4[1] = 1029;
+        sArrayArray[1] = sArray2;
+        short[] sArray5 = new short[2];
+        sArray2 = sArray5;
+        sArray5[0] = 1004;
+        sArray5[1] = 1030;
+        sArrayArray[2] = sArray2;
+        short[] sArray6 = new short[2];
+        sArray2 = sArray6;
+        sArray6[0] = 1005;
+        sArray6[1] = 1031;
+        sArrayArray[3] = sArray2;
+        short[] sArray7 = new short[2];
+        sArray2 = sArray7;
+        sArray7[0] = 1006;
+        sArray7[1] = 1032;
+        sArrayArray[4] = sArray2;
+        short[] sArray8 = new short[2];
+        sArray2 = sArray8;
+        sArray8[0] = 1007;
+        sArray8[1] = 1033;
+        sArrayArray[5] = sArray2;
+        short[] sArray9 = new short[2];
+        sArray2 = sArray9;
+        sArray9[0] = 1008;
+        sArray9[1] = 1034;
+        sArrayArray[6] = sArray2;
+        short[] sArray10 = new short[2];
+        sArray2 = sArray10;
+        sArray10[0] = 1009;
+        sArray10[1] = 1035;
+        sArrayArray[7] = sArray2;
+        short[] sArray11 = new short[2];
+        sArray2 = sArray11;
+        sArray11[0] = 1010;
+        sArray11[1] = 1036;
+        sArrayArray[8] = sArray2;
+        short[] sArray12 = new short[2];
+        sArray2 = sArray12;
+        sArray12[0] = 1011;
+        sArray12[1] = 1037;
+        sArrayArray[9] = sArray2;
+        short[] sArray13 = new short[2];
+        sArray2 = sArray13;
+        sArray13[0] = 1012;
+        sArray13[1] = 1038;
+        sArrayArray[10] = sArray2;
+        short[] sArray14 = new short[2];
+        sArray2 = sArray14;
+        sArray14[0] = 1013;
+        sArray14[1] = 1039;
+        sArrayArray[11] = sArray2;
+        short[] sArray15 = new short[2];
+        sArray2 = sArray15;
+        sArray15[0] = 1014;
+        sArray15[1] = 1040;
+        sArrayArray[12] = sArray2;
+        short[] sArray16 = new short[2];
+        sArray2 = sArray16;
+        sArray16[0] = 1015;
+        sArray16[1] = 1041;
+        sArrayArray[13] = sArray2;
+        short[] sArray17 = new short[2];
+        sArray2 = sArray17;
+        sArray17[0] = 1016;
+        sArray17[1] = 1042;
+        sArrayArray[14] = sArray2;
+        short[] sArray18 = new short[2];
+        sArray2 = sArray18;
+        sArray18[0] = 1017;
+        sArray18[1] = 1043;
+        sArrayArray[15] = sArray2;
+        short[] sArray19 = new short[2];
+        sArray2 = sArray19;
+        sArray19[0] = 1018;
+        sArray19[1] = 1044;
+        sArrayArray[16] = sArray2;
+        short[] sArray20 = new short[2];
+        sArray2 = sArray20;
+        sArray20[0] = 1045;
+        sArray20[1] = 1046;
+        sArrayArray[17] = sArray2;
+        ll = sArrayArray;
+        int n = 17;
+        short[] sArray21 = new short[17];
+        short[] sArray22 = sArray21;
+        sArray21[0] = 5229;
+        sArray21[1] = 5236;
+        sArray21[2] = 5254;
+        sArray21[3] = 5255;
+        sArray21[4] = 5314;
+        sArray21[5] = 5315;
+        sArray21[6] = 5316;
+        sArray21[7] = 5317;
+        sArray21[8] = 5318;
+        sArray21[9] = 5319;
+        sArray21[10] = 5320;
+        sArray21[11] = 5289;
+        sArray21[12] = 5290;
+        sArray21[13] = 5291;
+        sArray21[14] = 5292;
+        sArray21[15] = 5293;
+        sArray21[16] = 5294;
+        Iz = sArray21;
+        wx_2 wx_22 = new wx_2(Math.max(n, 10));
+        wx_22.W30(sArray22);
+        xg = wx_22;
+    }
+}
+

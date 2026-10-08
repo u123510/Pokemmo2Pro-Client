@@ -1,0 +1,3 @@
+package ch.qos.logback.core.model;
+import java.util.Objects;
+public class ParamModel extends NamedModel { private static final long serialVersionUID=-3697627721759508667L; String value; public ParamModel(){} public ParamModel makeNewInstance(){return new ParamModel();} public void mirror(Model m){super.mirror(m);value=((ParamModel)m).value;} public String getValue(){return value;} public void setValue(String v){value=v;} public int hashCode(){return 31*super.hashCode()+Objects.hash(value);} public boolean equals(Object o){return this==o||(super.equals(o)&&getClass()==o.getClass()&&Objects.equals(value,((ParamModel)o).value));} }
