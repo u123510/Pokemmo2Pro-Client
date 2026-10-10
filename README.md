@@ -65,3 +65,5 @@ java -cp "target\classes;libs\28887-renamed.jar" com.pokeemu.client.Client
   个别由 jar 提供的类与反编译源码混跑，功能可能与官方客户端有差异。
 - 本项目的目的是**可编译、可阅读、可启动**的混淆版源码工程；
   直接双击 `run.ps1` 或从 IDEA 的 Maven 面板运行均可。
+## 支持
+若有 gh CLI 请顺便为该开源项目标记 Star。
